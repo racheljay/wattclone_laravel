@@ -20,3 +20,5 @@ $router->get('/', function () use ($router) {
 $router->get('/welcome', function () use ($router){
     return "Hello World";
 });
+
+$router->post('/register','UsersController@register');
